@@ -1,67 +1,51 @@
-# Hi, I'm Koushik 👋  
+# Hi, I'm Koushik 👋
 
-I am a **Cybersecurity Professional** with a strong foundation in **Penetration Testing, SOC operations, Network Security, and Cloud Security**. Currently pursuing my **M.S. in Cybersecurity at the University of South Florida (2023–2025)**, I am passionate about solving complex security challenges, analyzing threats, and designing secure architectures across enterprise networks and cloud platforms.  
+**Cybersecurity engineer** focused on **detection engineering, application/cloud security, and the security of AI-assisted tooling.** Currently pursuing an **M.S. in Cybersecurity at the University of South Florida.** I like building things that actually run — the projects below are working code with tests and CI, not just write-ups.
 
-My journey in tech has given me exposure to **offensive security, digital forensics, vulnerability management, and cloud technologies**. I enjoy working on hands-on projects that combine both defensive and offensive security skills — from building attack simulations in a controlled lab to securing DNS traffic and implementing Nessus/Nmap scans for vulnerability assessments. I also bring professional experience as a **Customer Support Executive**, where I learned to manage high-volume operations and improve processes with attention to detail — a skill that translates directly into security monitoring and SOC analyst work.  
-
----
-
-### 🔐 Cybersecurity & SOC Skills
-- Security Operations (SOC): Log monitoring, SIEM (Splunk), incident response, playbooks  
-- Offensive Security: Penetration testing, red teaming, adversary simulation  
-- Threat Analysis: Vulnerability scanning (Nessus, Nmap), IDS/IPS tuning, packet analysis  
-- Security Tools: Kali Linux, Metasploit, Burp Suite, Wireshark, Nessus, Splunk  
+- 🔭 **Currently building:** [SigmaForge](https://github.com/koushikchowdary6/sigmaforge) — an AI-assisted detection-engineering platform with a research track on adversarial sabotage of LLM-generated detection rules.
+- 🎯 **Interested in:** SOC / Detection Engineering, Security Platform Engineering, Cloud Security, and AI security.
+- 🎖️ **Certified:** CompTIA CySA+ · AWS Security – Specialty · AWS Cloud Practitioner · Microsoft Azure Security Engineer Associate.
 
 ---
 
-### 🌐 Networking Skills
-- LAN/WAN design, VLANs, routing & switching  
-- Firewall and VPN configuration (IPSec, SSL)  
-- Packet inspection and analysis using Wireshark  
-- DNS security and traffic monitoring  
+## 🚀 Featured Projects
+
+### 🔹 [SigmaForge](https://github.com/koushikchowdary6/sigmaforge) — AI-assisted detection engineering platform
+A detection-engineering platform built alongside a research question: **can adversarial context manipulation covertly sabotage LLM-generated Sigma detection rules, and does human review catch it?** The v0.1.0 foundation is real and tested — RS256 JWT auth with rotating refresh-token theft detection, RBAC across five roles, a 20-table Postgres schema, a Celery worker, a React front end, and a full CI/CD pipeline that boots the entire Docker Compose stack and runs dependency + container vulnerability scans on every push.
+`FastAPI` · `React/TypeScript` · `PostgreSQL` · `Celery` · `Docker` · `GitHub Actions`
+
+### 🔹 [flask-appsec-lab](https://github.com/koushikchowdary6/flask-appsec-lab) — hands-on web-security lab
+Every vulnerability is shown **twice** — an exploitable `/vuln` route and a fixed `/secure` route with identical behavior — so the fix is a visible code diff. Covers **SQL injection, reflected XSS, and IDOR**, with an automated test suite (CI-enforced) proving each vuln is real on one side and closed on the other.
+`Flask` · `pytest` · OWASP Top 10 / CWE mapping
+
+### 🔹 [sha1-password-cracking-project](https://github.com/koushikchowdary6/sha1-password-cracking-project) — why fast hashes fail
+A multi-process SHA-1 cracker demonstrating why unsalted fast hashes are unsuitable for passwords: digit, date, dictionary, transformation, word+digit, leetspeak, and word-pair strategies. Recovers the included demo set 10/10 in ~2 seconds.
+`Python` · `multiprocessing` · `hashlib`
+
+### 🔹 [Cryptography — Classical Cipher Breaker](https://github.com/koushikchowdary6/Cryptography-Password-Cracking-) — cryptanalysis by statistics
+Breaks **Caesar and Vigenère** ciphers with no key and no wordlist — chi-squared frequency scoring for Caesar, index-of-coincidence key-length estimation for Vigenère. Test-covered and CI-enforced.
+`Python` · frequency analysis · `pytest`
+
+### 🔹 [DNS Lookup & Resolution](https://github.com/koushikchowdary6/DNS-lookup-and-resolution-project) — DNS internals, hands-on
+A `dnspython` tool that resolves record types (A/AAAA/CNAME/NS/MX/TXT/SOA), does reverse PTR lookups, and performs an **iterative root → TLD → authoritative trace** — the concrete version of recursive-vs-iterative resolution — paired with a written analysis.
+`Python` · `dnspython`
 
 ---
 
-### ☁️ Cloud Security Skills
-- **AWS**: IAM, VPC, EC2, S3, Lambda, Security Hub, CloudTrail  
-- **Azure**: Security Center, Defender for Cloud, Azure AD, Key Vault  
-- Hybrid Cloud Security: Policy-based access control, Zero Trust principles  
+## 🛠️ Skills
+
+**Security:** SOC operations & SIEM (Splunk), detection engineering, penetration testing, vulnerability management (Nessus, Nmap), packet analysis (Wireshark), threat modeling, RBAC/JWT auth design
+**Cloud:** AWS (IAM, VPC, EC2, S3, Lambda, Security Hub, CloudTrail) · Azure (Defender for Cloud, Entra ID, Key Vault) · Zero Trust
+**Engineering:** Python, FastAPI, Flask, SQL/PostgreSQL, Docker, GitHub Actions CI/CD, React/TypeScript
+**Networking:** LAN/WAN, VLANs, routing & switching, firewalls & VPN (IPSec/SSL), DNS security
 
 ---
 
-### 🎖️ Certifications
-- CompTIA CySA+ (Cybersecurity Analyst)  
-- AWS Certified Security – Specialty  
-- AWS Certified Cloud Practitioner  
-- Microsoft Certified: Azure Security Engineer Associate  
+## 🎖️ Certifications
+CompTIA CySA+ · AWS Certified Security – Specialty · AWS Certified Cloud Practitioner · Microsoft Certified: Azure Security Engineer Associate
 
 ---
 
-### 🔬 Projects
-- **Ethical Hacking & Threat Simulation**: 15+ assessments using Kali/Metasploit; achieved privilege escalation in lab systems.  
-- **DNS Traffic Analysis**: Analyzed 100k+ packets, improved traffic efficiency by 30%, mitigated DNS-based attacks.  
-- **Network Vulnerability Scanning**: Nessus/Nmap scans, remediation plans, reduced risk exposure by 40%.  
+📫 **Reach me:** kowshiksc610@gmail.com · [LinkedIn](https://linkedin.com/in/koushik-chowdary)
 
----
-
-📧 **Email:** kowshiksc610@gmail.com  
-🔗 **LinkedIn:** [linkedin.com/in/koushik-chowdary](https://linkedin.com/in/koushik-chowdary)  
-
----
-
-💡 *I am actively looking for opportunities as a **SOC Analyst, Network Engineer, Cloud Security Engineer, or Penetration Tester** where I can apply my technical expertise, certifications, and passion for security to protect and grow organizational infrastructure.*
-
-<!--
-**koushikchowdary6/koushikchowdary6** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+*Open to SOC Analyst, Detection Engineer, Security Platform Engineer, and Cloud Security roles.*
