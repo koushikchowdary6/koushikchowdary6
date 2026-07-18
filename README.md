@@ -48,4 +48,4 @@ CompTIA CySA+ · AWS Certified Security – Specialty · AWS Certified Cloud Pra
 
 📫 **Reach me:** kowshiksc610@gmail.com · [LinkedIn](https://linkedin.com/in/koushik-chowdary)
 
-*Open to SOC Analyst, Detection Engineer, Security Platform Engineer, and Cloud Security roles.*
+*Open to Security Engineer, SOC Analyst, Detection Engineer, Security Platform Engineer, Network Security Engineer and Cloud Security roles.*
