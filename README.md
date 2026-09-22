@@ -1,79 +1,84 @@
-<h1 align="center">Hi, I'm Koushik 👋</h1>
+<h1 align="center">Koushik Chowdary</h1>
 
 <p align="center">
-  <b>Cybersecurity engineer</b> — detection engineering, cloud & application security, and the security of AI-assisted systems.<br>
-  M.S. Cybersecurity @ University of South Florida. I ship working code with tests and CI, not slide decks.
+  <b>Security Engineer · Detection Engineering · AI/LLM Security</b><br>
+  M.S. Cybersecurity, University of South Florida · Python · FastAPI · AWS/Azure · SIEM/SOC
 </p>
 
 <p align="center">
   <a href="https://linkedin.com/in/koushik-chowdary"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:kowshiksc610@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <a href="https://github.com/koushikchowdary6"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/CompTIA-CySA%2B-E31837?style=flat-square&logo=comptia&logoColor=white">
   <img src="https://img.shields.io/badge/AWS-Security%20Specialty-FF9900?style=flat-square&logo=amazonaws&logoColor=white">
-  <img src="https://img.shields.io/badge/AWS-Cloud%20Practitioner-FF9900?style=flat-square&logo=amazonaws&logoColor=white">
   <img src="https://img.shields.io/badge/Azure-Security%20Engineer-0078D4?style=flat-square&logo=microsoftazure&logoColor=white">
 </p>
 
 ---
 
-## 🚀 Featured Projects
+## What I build
 
-> Every project below is real, runnable, test-covered, and CI-backed.
+I focus on security engineering that can be run, tested, and inspected: detection tooling, AppSec labs, cloud/IAM analysis, and evaluation infrastructure for AI systems. The repos below include working code, tests, CI, and documented limitations rather than portfolio-only mockups.
 
-### 🧠 AI / ML Security
-| Project | What it does |
+### Recruiter quick tour
+
+| Project | Why it is worth opening |
 |---|---|
-| **[SigmaForge](https://github.com/koushikchowdary6/sigmaforge)** | AI-assisted detection-engineering platform + a research track on whether adversarial context can sabotage LLM-generated Sigma rules. FastAPI · React · Postgres · full CI/CD. |
-| **[prompt-injection-detector](https://github.com/koushikchowdary6/prompt-injection-detector)** | LLM guardrail flagging jailbreak/injection attempts — hybrid regex heuristics + TF-IDF/LogReg model. |
-| **[llm-pii-redactor](https://github.com/koushikchowdary6/llm-pii-redactor)** | Strips PII & secrets from text *before* it reaches an LLM (regex + entropy). |
-| **[security-findings-translator](https://github.com/koushikchowdary6/security-findings-translator)** | Uses the Claude API to explain technical findings in plain English for non-technical readers. |
-| **[phishing-url-detector](https://github.com/koushikchowdary6/phishing-url-detector)** | scikit-learn classifier scoring URLs from lexical features — no page fetch. |
-| **[network-anomaly-detector](https://github.com/koushikchowdary6/network-anomaly-detector)** | Unsupervised Isolation Forest flagging port scans, exfiltration, and DoS in NetFlow. |
+| **[EvalForge](https://github.com/koushikchowdary6/EvalForge)** | LLM, RAG, and tool-calling evaluation framework with auditable reports, automated graders, safety-oriented agent evals, and 100+ tests. |
+| **[SigmaForge](https://github.com/koushikchowdary6/sigmaforge)** | FastAPI + React detection-engineering platform and AI-security research testbed with auth/RBAC, Postgres, Celery/Redis, Docker, threat modeling, and CI. |
+| **[flask-appsec-lab](https://github.com/koushikchowdary6/flask-appsec-lab)** | Vulnerable-vs-secure Flask lab demonstrating SQL injection, XSS, and IDOR with tests proving both exploitation and remediation. |
+| **[iam-policy-auditor](https://github.com/koushikchowdary6/iam-policy-auditor)** | Offline AWS IAM policy analyzer that flags wildcards, public principals, and common privilege-escalation paths and can fail CI on high-risk findings. |
 
-### 🔐 Security Tooling & Cryptography
-| Project | What it does |
-|---|---|
-| **[iam-policy-auditor](https://github.com/koushikchowdary6/iam-policy-auditor)** | Static analyzer flagging risky AWS IAM permissions — usable as a CI guardrail. |
-| **[ssh-log-threat-detector](https://github.com/koushikchowdary6/ssh-log-threat-detector)** | SOC detection tool for SSH brute force, spraying, and post-brute-force logins. |
-| **[lamport-signatures](https://github.com/koushikchowdary6/lamport-signatures)** | Post-quantum hash-based one-time signatures, from scratch (basis of SPHINCS+). |
-| **[aes-modes-of-operation](https://github.com/koushikchowdary6/aes-modes-of-operation)** | ECB/CBC/CTR/OFB built from the block up, verified against PyCryptodome. |
-| **[flask-appsec-lab](https://github.com/koushikchowdary6/flask-appsec-lab)** | Hands-on OWASP lab: each vuln shown exploitable vs. fixed, with tests proving both. |
-| **[tcp-port-scanner](https://github.com/koushikchowdary6/tcp-port-scanner)** | Concurrent port scanner with banner grabbing. |
+### Recent engineering work
+
+- **Aug 2026 · EvalForge:** added RAG evaluation across retrieval depths plus agent/tool-call evaluation covering tool selection, argument accuracy, injection resistance, destructive-action refusal, latency, and cost.
+- **Aug 2026 · SigmaForge:** continued hardening and documentation of the detection-engineering platform after CI/container reliability work.
+- **Current portfolio direction:** security engineering + AI evaluation, with emphasis on measurable behavior, reproducible tests, and transparent limitations.
 
 ---
 
-## 🛠️ Tech Stack
+## More security projects
+
+| Project | Focus |
+|---|---|
+| **[prompt-injection-detector](https://github.com/koushikchowdary6/prompt-injection-detector)** | Hybrid regex + TF-IDF/logistic-regression LLM input guardrail. |
+| **[llm-pii-redactor](https://github.com/koushikchowdary6/llm-pii-redactor)** | PII and secret redaction before text reaches an LLM or logging pipeline. |
+| **[security-findings-translator](https://github.com/koushikchowdary6/security-findings-translator)** | Converts structured security findings into plain-English remediation guidance. |
+| **[ssh-log-threat-detector](https://github.com/koushikchowdary6/ssh-log-threat-detector)** | Detection logic for SSH brute force, password spraying, and suspicious post-authentication activity. |
+| **[phishing-url-detector](https://github.com/koushikchowdary6/phishing-url-detector)** | ML classifier using lexical URL features without fetching potentially hostile pages. |
+| **[network-anomaly-detector](https://github.com/koushikchowdary6/network-anomaly-detector)** | Isolation Forest anomaly detection over NetFlow-style traffic. |
+| **[lamport-signatures](https://github.com/koushikchowdary6/lamport-signatures)** | Hash-based one-time signatures implemented from first principles. |
+| **[aes-modes-of-operation](https://github.com/koushikchowdary6/aes-modes-of-operation)** | AES mode implementations and verification exercises. |
+
+---
+
+## Stack
+
+**Security:** Detection engineering · SIEM/SOC · AppSec · IAM · Cloud security · OWASP · MITRE ATT&CK  
+**Engineering:** Python · FastAPI · SQL/PostgreSQL · React/TypeScript · Docker · GitHub Actions · Linux  
+**AI/ML:** LLM evaluation · RAG evaluation · agent/tool-call evaluation · scikit-learn · guardrails
 
 <p>
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
   <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white">
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white">
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white">
   <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white">
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black">
   <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white">
   <img src="https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white">
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black">
-  <img src="https://img.shields.io/badge/Splunk-000000?style=flat-square&logo=splunk&logoColor=white">
-  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white">
 </p>
-
-**Focus areas:** Detection engineering · SIEM/SOC · AI & LLM security · Cloud security (AWS/Azure) · Applied cryptography · Network security
 
 ---
 
-## 📊 GitHub Stats
+## GitHub activity
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=koushikchowdary6&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="stats">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=koushikchowdary6&layout=compact&theme=tokyonight&hide_border=true" alt="top langs">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=koushikchowdary6&show_icons=true&hide_border=true&count_private=true" alt="GitHub stats">
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=koushikchowdary6&layout=compact&hide_border=true" alt="Top languages">
 </p>
 
----
-
-<p align="center"><i>Open to Detection Engineer, Security Engineer, AI Security, and Cloud Security roles — let's talk.</i></p>
+<p align="center">
+  <i>Open to security engineering, detection engineering, cloud security, and AI security / evaluation roles.</i>
+</p>
