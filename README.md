@@ -1,7 +1,7 @@
 <h1 align="center">Koushik Chowdary</h1>
 
 <p align="center">
-  <b>AI Security · LLM Evaluation · Detection Engineering</b><br>
+  <b>AI Engineering · LLM/RAG/Agent Evaluation · AI Security</b><br>
   M.S. Cybersecurity, University of South Florida · Python · FastAPI · AWS/Azure · LLM/RAG/Agent Evals
 </p>
 
@@ -55,9 +55,17 @@ I build AI evaluation and security tooling that can be inspected, tested, and re
 
 ---
 
-## Open-source & collaborative work
+## Selected collaborative repositories
 
-I also contribute to projects outside my own repositories. Accepted external contributions that are technically meaningful and relevant to AI, security, developer tooling, or infrastructure will be listed here with the exact repository and contribution so the work is easy to verify.
+These repositories are owned by **[Priya Khatik](https://github.com/priakhatik)** and are visible to me as collaborator-access projects. I keep ownership attribution explicit; specific contributions will be linked here as they land.
+
+| Repository | Area |
+|---|---|
+| **[corn-belt-drought-risk](https://github.com/priakhatik/corn-belt-drought-risk)** | Applied ML for county-level agricultural drought-risk classification using climate and satellite-derived features. |
+| **[wheat-fhb-forecasting](https://github.com/priakhatik/wheat-fhb-forecasting)** | End-to-end ML forecasting pipeline for wheat disease risk using weather, crop-progress, and engineered biological-window features. |
+| **[spotify_azure_project](https://github.com/priakhatik/spotify_azure_project)** | Azure data engineering with ADF, ADLS Gen2, Databricks/PySpark, Delta/Lakeflow, CDC/SCD modeling, and Unity Catalog. |
+
+These broaden the portfolio view across **AI/ML, data engineering, and production-oriented software/data pipelines** without presenting someone else's work as my own.
 
 ---
 
@@ -79,13 +87,10 @@ I also contribute to projects outside my own repositories. Accepted external con
 
 ---
 
-## GitHub activity
+## What I am targeting
+
+**AI Engineering · LLM/RAG/Agent Evaluation · AI Security · Applied ML · Security Automation**
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=koushikchowdary6&show_icons=true&hide_border=true&count_private=true" alt="GitHub stats">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=koushikchowdary6&layout=compact&hide_border=true" alt="Top languages">
-</p>
-
-<p align="center">
-  <i>Open to AI engineering, AI security, LLM evaluation, detection engineering, and security engineering roles.</i>
+  <i>Building toward AI engineering and AI security roles with a portfolio grounded in reproducible evaluation, guardrails, applied ML, data pipelines, and security engineering.</i>
 </p>
