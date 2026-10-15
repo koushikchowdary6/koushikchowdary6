@@ -33,12 +33,14 @@ I build AI evaluation and security tooling that can be inspected, tested, and re
 | **[security-findings-translator](https://github.com/koushikchowdary6/security-findings-translator)** | Translates structured security findings into concise remediation guidance with an LLM-backed path and deterministic offline mode. |
 | **[iam-policy-auditor](https://github.com/koushikchowdary6/iam-policy-auditor)** | Offline AWS IAM policy analyzer that flags wildcards, public principals, and privilege-escalation paths and can fail CI on high-risk findings. |
 
-### Recent engineering work
+### Recent engineering work — Oct 2026
 
-- **EvalForge:** LLM/RAG/agent evaluation, trajectory-aware grading, safety-oriented agent tests, benchmark provenance cleanup, and regression coverage for retrieval metrics.
-- **AI guardrails:** prompt-injection detection, PII/secret redaction, and security finding translation with explicit threat models and testable behavior.
-- **SigmaForge:** AI-assisted detection-engineering research platform with production-style auth, background workers, containerized services, and CI hardening.
-- **Current direction:** AI engineering + AI security, with security engineering depth underneath it.
+- **EvalForge:** hardened RAG evaluation metrics and LLM-judge score validation, with regression coverage around malformed/non-finite evaluator outputs.
+- **AI guardrails:** strengthened prompt-injection detector configuration validation and kept heuristic fallback behavior testable before ML fitting.
+- **IAM analysis:** expanded wildcard-action handling and regression coverage for partial IAM action patterns such as `s3:Get*`.
+- **Applied ML:** moved network-anomaly evaluation to a held-out train/test methodology and added a regression check for evaluation isolation.
+- **Security automation:** hardened security-finding ingestion so malformed JSON fails clearly instead of propagating ambiguous downstream errors.
+- **Current direction:** AI engineering + AI security, with measurable evaluation quality, reproducibility, and security engineering depth.
 
 ---
 
