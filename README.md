@@ -44,6 +44,15 @@ I build AI evaluation and security tooling that can be inspected, tested, and re
 
 ---
 
+## Open-source contributions
+
+- **[Wheat FHB Forecasting PR #1](https://github.com/priakhatik/wheat-fhb-forecasting/pull/1)** *(open)* — moves preprocessing inside cross-validation folds and removes machine-specific paths so model evaluation is less leakage-prone and more reproducible.
+- **[Corn Belt Drought Risk PR #1](https://github.com/priakhatik/corn-belt-drought-risk/pull/1)** *(open)* — aligns drought labels, prevents future-date joins, and builds climatology from training years only for cleaner held-out evaluation.
+
+These are contributions to repositories owned by **Priya Khatik**; they are listed here as reviewable pull requests, not as projects I own.
+
+---
+
 ## Security engineering foundation
 
 | Project | Focus |
