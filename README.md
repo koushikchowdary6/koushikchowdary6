@@ -36,7 +36,7 @@ I build AI evaluation and security tooling that can be inspected, tested, and re
 ### Recent engineering work — Oct 2026
 
 - **EvalForge:** hardened RAG and agent evaluation correctness, including model-aware embedding caches, malformed/non-finite judge outputs, duplicate tool-call grading, argument scoring, and state isolation across repeated evaluation sweeps.
-- **AI guardrails:** strengthened prompt-injection detector configuration validation and kept heuristic fallback behavior testable before ML fitting.
+- **AI guardrails:** strengthened prompt-injection and PII/secret defenses with configuration validation, false-positive regressions, complete/malformed PEM redaction coverage, and safe audit-logging guidance.
 - **IAM analysis:** expanded wildcard-action handling and regression coverage for partial IAM action patterns such as `s3:Get*`.
 - **Applied ML:** moved network-anomaly evaluation to a held-out train/test methodology and added a regression check for evaluation isolation.
 - **Security automation:** hardened security-finding ingestion so malformed JSON fails clearly instead of propagating ambiguous downstream errors.
@@ -48,6 +48,7 @@ I build AI evaluation and security tooling that can be inspected, tested, and re
 
 - **[Wheat FHB Forecasting PR #1](https://github.com/priakhatik/wheat-fhb-forecasting/pull/1)** *(open)* — moves preprocessing inside cross-validation folds and removes machine-specific paths so model evaluation is less leakage-prone and more reproducible.
 - **[Corn Belt Drought Risk PR #1](https://github.com/priakhatik/corn-belt-drought-risk/pull/1)** *(open)* — aligns drought labels, prevents future-date joins, and builds climatology from training years only for cleaner held-out evaluation.
+- **[Spotify Azure Project PR #2](https://github.com/priakhatik/spotify_azure_project/pull/2)** *(open)* — repairs a Lakeflow SCD Type 2 CDC definition using the current `pyspark.pipelines` API and the ADF `updated_at` watermark.
 
 These are contributions to repositories owned by **Priya Khatik**; they are listed here as reviewable pull requests, not as projects I own.
 
