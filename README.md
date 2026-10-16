@@ -26,7 +26,7 @@ I build AI evaluation and security tooling that can be inspected, tested, and re
 
 | Project | Why it is worth opening |
 |---|---|
-| **[EvalForge](https://github.com/koushikchowdary6/EvalForge)** | LLM, RAG, and tool-calling evaluation framework with auditable reports, automated graders, safety-oriented agent evals, benchmark artifacts, and 100+ tests. |
+| **[EvalForge](https://github.com/koushikchowdary6/EvalForge)** | LLM, RAG, and tool-calling evaluation framework with auditable reports, automated graders, safety-oriented agent evals, benchmark artifacts, and a CI-backed regression suite. |
 | **[prompt-injection-detector](https://github.com/koushikchowdary6/prompt-injection-detector)** | Hybrid heuristic + ML input guardrail with regression tests around jailbreak signals, scoring semantics, thresholds, and pre-training fallback behavior. |
 | **[llm-pii-redactor](https://github.com/koushikchowdary6/llm-pii-redactor)** | PII and secret redaction for LLM pipelines, including credential-like token detection and validation logic. |
 | **[SigmaForge](https://github.com/koushikchowdary6/sigmaforge)** | FastAPI + React detection-engineering platform and AI-security research testbed with auth/RBAC, Postgres, Celery/Redis, Docker, threat modeling, and CI. |
@@ -35,7 +35,7 @@ I build AI evaluation and security tooling that can be inspected, tested, and re
 
 ### Recent engineering work — Oct 2026
 
-- **EvalForge:** hardened RAG evaluation metrics and LLM-judge score validation, with regression coverage around malformed/non-finite evaluator outputs.
+- **EvalForge:** hardened RAG and agent evaluation correctness, including model-aware embedding caches, malformed/non-finite judge outputs, duplicate tool-call grading, argument scoring, and state isolation across repeated evaluation sweeps.
 - **AI guardrails:** strengthened prompt-injection detector configuration validation and kept heuristic fallback behavior testable before ML fitting.
 - **IAM analysis:** expanded wildcard-action handling and regression coverage for partial IAM action patterns such as `s3:Get*`.
 - **Applied ML:** moved network-anomaly evaluation to a held-out train/test methodology and added a regression check for evaluation isolation.
@@ -54,20 +54,6 @@ I build AI evaluation and security tooling that can be inspected, tested, and re
 | **[network-anomaly-detector](https://github.com/koushikchowdary6/network-anomaly-detector)** | Isolation Forest anomaly detection over NetFlow-style traffic. |
 | **[lamport-signatures](https://github.com/koushikchowdary6/lamport-signatures)** | Hash-based one-time signatures implemented from first principles. |
 | **[aes-modes-of-operation](https://github.com/koushikchowdary6/aes-modes-of-operation)** | AES mode implementations and verification exercises. |
-
----
-
-## Selected collaborative repositories
-
-These repositories are owned by **[Priya Khatik](https://github.com/priakhatik)** and are visible to me as collaborator-access projects. I keep ownership attribution explicit; specific contributions will be linked here as they land.
-
-| Repository | Area |
-|---|---|
-| **[corn-belt-drought-risk](https://github.com/priakhatik/corn-belt-drought-risk)** | Applied ML for county-level agricultural drought-risk classification using climate and satellite-derived features. |
-| **[wheat-fhb-forecasting](https://github.com/priakhatik/wheat-fhb-forecasting)** | End-to-end ML forecasting pipeline for wheat disease risk using weather, crop-progress, and engineered biological-window features. |
-| **[spotify_azure_project](https://github.com/priakhatik/spotify_azure_project)** | Azure data engineering with ADF, ADLS Gen2, Databricks/PySpark, Delta/Lakeflow, CDC/SCD modeling, and Unity Catalog. |
-
-These broaden the portfolio view across **AI/ML, data engineering, and production-oriented software/data pipelines** without presenting someone else's work as my own.
 
 ---
 
