@@ -30,8 +30,8 @@ I build AI evaluation and security tooling that can be inspected, tested, and re
 | **[prompt-injection-detector](https://github.com/koushikchowdary6/prompt-injection-detector)** | Hybrid heuristic + ML input guardrail with regression tests around jailbreak signals, scoring semantics, thresholds, and pre-training fallback behavior. |
 | **[llm-pii-redactor](https://github.com/koushikchowdary6/llm-pii-redactor)** | PII and secret redaction for LLM pipelines, including credential-like token detection and validation logic. |
 | **[SigmaForge](https://github.com/koushikchowdary6/sigmaforge)** | FastAPI + React detection-engineering platform and AI-security research testbed with auth/RBAC, Postgres, Celery/Redis, Docker, threat modeling, and CI. |
-| **[security-findings-translator](https://github.com/koushikchowdary6/security-findings-translator)** | Translates structured security findings into concise remediation guidance with an LLM-backed path and deterministic offline mode. |
-| **[iam-policy-auditor](https://github.com/koushikchowdary6/iam-policy-auditor)** | Offline AWS IAM policy analyzer that flags wildcards, public principals, and privilege-escalation paths and can fail CI on high-risk findings. |
+| **[airflow-postgres-etl](https://github.com/koushikchowdary6/airflow-postgres-etl)** | Production-style Airflow + PostgreSQL batch ETL with incremental watermarks, idempotent upserts, real integration tests, data-quality gates, and recovery semantics. |
+| **[terraform-gcp-data-pipeline](https://github.com/koushikchowdary6/terraform-gcp-data-pipeline)** | Python/DuckDB market-data pipeline with a Terraform-managed GCS + BigQuery path, deterministic keys, revision lookback, CI validation, and security scanning. |
 
 ### Recent engineering work — Oct 2026
 
@@ -40,7 +40,19 @@ I build AI evaluation and security tooling that can be inspected, tested, and re
 - **IAM analysis:** expanded wildcard-action handling and regression coverage for partial IAM action patterns such as `s3:Get*`.
 - **Applied ML:** moved network-anomaly evaluation to a held-out train/test methodology and added a regression check for evaluation isolation.
 - **Security automation:** hardened security-finding ingestion so malformed JSON fails clearly instead of propagating ambiguous downstream errors.
-- **Current direction:** AI engineering + AI security, with measurable evaluation quality, reproducibility, and security engineering depth.
+- **Data engineering:** built CI-backed Airflow/PostgreSQL and Python/DuckDB/Terraform pipelines with incremental state, idempotent loads, quality gates, and explicit recovery behavior.
+- **Current direction:** AI engineering + AI security, backed by production-oriented data engineering and platform depth.
+
+---
+
+## Data engineering & platform
+
+| Project | Engineering signal |
+|---|---|
+| **[airflow-postgres-etl](https://github.com/koushikchowdary6/airflow-postgres-etl)** | Daily seven-task Airflow DAG over PostgreSQL with incremental watermarks, natural-key upserts, nine SQL quality checks, restart-safe recovery, PostgreSQL integration tests, and an end-to-end idempotency smoke test. |
+| **[terraform-gcp-data-pipeline](https://github.com/koushikchowdary6/terraform-gcp-data-pipeline)** | Reproducible Python ingestion into DuckDB locally, plus a Terraform-defined GCS/BigQuery architecture with partitioning, clustering, least-privilege IAM, revision lookback, delivery tracking, Terraform validation, TFLint, and Checkov. |
+
+Both repositories are intentionally explicit about what was actually executed versus what remains unproven in cloud runtime. That keeps the portfolio useful for data-engineering interviews without overstating deployment experience.
 
 ---
 
@@ -70,7 +82,7 @@ These are contributions to repositories owned by **Priya Khatik**; they are list
 ## Stack
 
 **AI / LLM:** LLM evaluation · RAG evaluation · agent/tool-call evaluation · prompt injection · guardrails · scikit-learn · benchmark design  
-**Engineering:** Python · FastAPI · SQL/PostgreSQL · React/TypeScript · Docker · GitHub Actions · Linux  
+**Engineering:** Python · FastAPI · SQL/PostgreSQL · Airflow · DuckDB · Terraform · GCP/BigQuery · React/TypeScript · Docker · GitHub Actions · Linux  
 **Security:** AI security · Detection engineering · AppSec · IAM · Cloud security · OWASP · MITRE ATT&CK · SIEM/SOC
 
 <p>
