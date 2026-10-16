@@ -1,8 +1,8 @@
 <h1 align="center">Koushik Chowdary</h1>
 
 <p align="center">
-  <b>AI Engineering · LLM/RAG/Agent Evaluation · AI Security</b><br>
-  M.S. Cybersecurity, University of South Florida · Python · FastAPI · AWS/Azure · LLM/RAG/Agent Evals
+  <b>AI Engineering · Data Engineering · LLM/RAG/Agent Evaluation · AI Security</b><br>
+  M.S. Cybersecurity, University of South Florida · Python · SQL/PostgreSQL · Airflow · Terraform · FastAPI · AWS/Azure/GCP
 </p>
 
 <p align="center">
@@ -20,18 +20,18 @@
 
 ## What I build
 
-I build AI evaluation and security tooling that can be inspected, tested, and reproduced. My current focus is LLM/RAG/agent evaluation, prompt-injection and data-leakage defenses, AI-assisted detection engineering, and cloud/application security. I prefer measurable behavior, explicit limitations, and CI-backed engineering over portfolio-only demos.
+I build AI and data systems that can be inspected, tested, and reproduced. My current work spans LLM/RAG/agent evaluation, AI guardrails, Airflow/PostgreSQL ETL, Terraform/GCP data infrastructure, and security automation. I prefer measurable behavior, explicit limitations, idempotent pipelines, and CI-backed engineering over portfolio-only demos.
 
 ### Recruiter quick tour
 
 | Project | Why it is worth opening |
 |---|---|
 | **[EvalForge](https://github.com/koushikchowdary6/EvalForge)** | LLM, RAG, and tool-calling evaluation framework with auditable reports, automated graders, safety-oriented agent evals, benchmark artifacts, and a CI-backed regression suite. |
-| **[prompt-injection-detector](https://github.com/koushikchowdary6/prompt-injection-detector)** | Hybrid heuristic + ML input guardrail with regression tests around jailbreak signals, scoring semantics, thresholds, and pre-training fallback behavior. |
-| **[llm-pii-redactor](https://github.com/koushikchowdary6/llm-pii-redactor)** | PII and secret redaction for LLM pipelines, including credential-like token detection and validation logic. |
-| **[SigmaForge](https://github.com/koushikchowdary6/sigmaforge)** | FastAPI + React detection-engineering platform and AI-security research testbed with auth/RBAC, Postgres, Celery/Redis, Docker, threat modeling, and CI. |
 | **[airflow-postgres-etl](https://github.com/koushikchowdary6/airflow-postgres-etl)** | Production-style Airflow + PostgreSQL batch ETL with incremental watermarks, idempotent upserts, real integration tests, data-quality gates, and recovery semantics. |
 | **[terraform-gcp-data-pipeline](https://github.com/koushikchowdary6/terraform-gcp-data-pipeline)** | Python/DuckDB market-data pipeline with a Terraform-managed GCS + BigQuery path, deterministic keys, revision lookback, CI validation, and security scanning. |
+| **[SigmaForge](https://github.com/koushikchowdary6/sigmaforge)** | FastAPI + React detection-engineering platform and AI-security research testbed with auth/RBAC, Postgres, Celery/Redis, Docker, threat modeling, and CI. |
+| **[prompt-injection-detector](https://github.com/koushikchowdary6/prompt-injection-detector)** | Hybrid heuristic + ML input guardrail with regression tests around jailbreak signals, scoring semantics, thresholds, and pre-training fallback behavior. |
+| **[llm-pii-redactor](https://github.com/koushikchowdary6/llm-pii-redactor)** | PII and secret redaction for LLM pipelines, including credential-like token detection and validation logic. |
 
 ### Recent engineering work — Oct 2026
 
@@ -99,8 +99,8 @@ These are contributions to repositories owned by **Priya Khatik**; they are list
 
 ## What I am targeting
 
-**AI Engineering · LLM/RAG/Agent Evaluation · AI Security · Applied ML · Security Automation**
+**AI Engineering · Data Engineering · LLM/RAG/Agent Evaluation · AI Security · Applied ML · Platform Engineering**
 
 <p align="center">
-  <i>Building toward AI engineering and AI security roles with a portfolio grounded in reproducible evaluation, guardrails, applied ML, data pipelines, and security engineering.</i>
+  <i>Building toward AI and data engineering roles with a portfolio grounded in reproducible evaluation, idempotent pipelines, cloud infrastructure, guardrails, and security engineering.</i>
 </p>
