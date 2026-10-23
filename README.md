@@ -35,9 +35,9 @@ I build AI and data systems that can be inspected, tested, and reproduced. My cu
 
 ### Recent engineering work — Oct 2026
 
-- **EvalForge:** improved RAG and agent evaluation correctness, including model-aware embedding caches, malformed/non-finite judge outputs, duplicate tool-call grading, and argument scoring. Repeated-sweep state isolation is proposed in [draft PR #1](https://github.com/koushikchowdary6/EvalForge/pull/1), not merged.
-- **AI guardrails:** strengthened prompt-injection and PII/secret defenses with configuration validation, false-positive regressions, PEM redaction coverage, and safe audit-logging guidance. Further hybrid-score corrections remain in [draft PR #1](https://github.com/koushikchowdary6/prompt-injection-detector/pull/1).
-- **IAM analysis:** expanded wildcard-action handling and regression coverage for partial IAM action patterns such as `s3:Get*`.
+- **EvalForge:** improved RAG and agent evaluation correctness, including model-aware embedding caches, malformed/non-finite judge outputs, duplicate tool-call grading, and argument scoring. [Merged PR #1](https://github.com/koushikchowdary6/EvalForge/pull/1) also isolates repeated evaluation sweeps, aborts provider-error responses before grading, and prevents stale report reuse.
+- **AI guardrails:** strengthened prompt-injection and PII/secret defenses with configuration validation, false-positive regressions, PEM redaction coverage, and safe audit-logging guidance. [Merged PR #1](https://github.com/koushikchowdary6/prompt-injection-detector/pull/1) preserves high-confidence hybrid signals and explicit ML opt-out semantics, with deterministic regression tests.
+- **IAM analysis:** expanded partial-wildcard detection (e.g. `s3:Get*`) and [merged statement-validation tests](https://github.com/koushikchowdary6/iam-policy-auditor/pull/1), including malformed selectors and broad `NotResource` allow findings.
 - **Applied ML:** moved network-anomaly evaluation to a held-out train/test methodology and added a regression check for evaluation isolation.
 - **Security automation:** hardened security-finding ingestion so malformed JSON fails clearly instead of propagating ambiguous downstream errors.
 - **Data engineering:** built CI-backed Airflow/PostgreSQL and Python/DuckDB/Terraform pipelines with incremental state, idempotent loads, quality gates, and explicit recovery behavior.
