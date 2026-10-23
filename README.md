@@ -29,14 +29,14 @@ I build AI and data systems that can be inspected, tested, and reproduced. My cu
 | **[EvalForge](https://github.com/koushikchowdary6/EvalForge)** | LLM, RAG, and tool-calling evaluation framework with auditable reports, automated graders, safety-oriented agent evals, benchmark artifacts, and a CI-backed regression suite. |
 | **[airflow-postgres-etl](https://github.com/koushikchowdary6/airflow-postgres-etl)** | Production-style Airflow + PostgreSQL batch ETL with incremental watermarks, idempotent upserts, real integration tests, data-quality gates, and recovery semantics. |
 | **[terraform-gcp-data-pipeline](https://github.com/koushikchowdary6/terraform-gcp-data-pipeline)** | Python/DuckDB market-data pipeline with a Terraform-managed GCS + BigQuery path, deterministic keys, revision lookback, CI validation, and security scanning. |
-| **[SigmaForge](https://github.com/koushikchowdary6/sigmaforge)** | FastAPI + React detection-engineering platform and AI-security research testbed with auth/RBAC, Postgres, Celery/Redis, Docker, threat modeling, and CI. |
+| **[SigmaForge](https://github.com/koushikchowdary6/sigmaforge)** | Early-stage FastAPI + React detection-engineering platform: implemented auth/RBAC, Postgres schema, Celery/Redis task wiring, Docker CI, and threat-model docs. Rule authoring, AI assistant, and research experiments are planned, not implemented. |
 | **[prompt-injection-detector](https://github.com/koushikchowdary6/prompt-injection-detector)** | Hybrid heuristic + ML input guardrail with regression tests around jailbreak signals, scoring semantics, thresholds, and pre-training fallback behavior. |
 | **[llm-pii-redactor](https://github.com/koushikchowdary6/llm-pii-redactor)** | PII and secret redaction for LLM pipelines, including credential-like token detection and validation logic. |
 
 ### Recent engineering work — Oct 2026
 
-- **EvalForge:** hardened RAG and agent evaluation correctness, including model-aware embedding caches, malformed/non-finite judge outputs, duplicate tool-call grading, argument scoring, and state isolation across repeated evaluation sweeps.
-- **AI guardrails:** strengthened prompt-injection and PII/secret defenses with configuration validation, false-positive regressions, complete/malformed PEM redaction coverage, and safe audit-logging guidance.
+- **EvalForge:** improved RAG and agent evaluation correctness, including model-aware embedding caches, malformed/non-finite judge outputs, duplicate tool-call grading, and argument scoring. Repeated-sweep state isolation is proposed in [draft PR #1](https://github.com/koushikchowdary6/EvalForge/pull/1), not merged.
+- **AI guardrails:** strengthened prompt-injection and PII/secret defenses with configuration validation, false-positive regressions, PEM redaction coverage, and safe audit-logging guidance. Further hybrid-score corrections remain in [draft PR #1](https://github.com/koushikchowdary6/prompt-injection-detector/pull/1).
 - **IAM analysis:** expanded wildcard-action handling and regression coverage for partial IAM action patterns such as `s3:Get*`.
 - **Applied ML:** moved network-anomaly evaluation to a held-out train/test methodology and added a regression check for evaluation isolation.
 - **Security automation:** hardened security-finding ingestion so malformed JSON fails clearly instead of propagating ambiguous downstream errors.
@@ -58,11 +58,11 @@ Both repositories are intentionally explicit about what was actually executed ve
 
 ## Open-source contributions
 
-- **[Wheat FHB Forecasting PR #1](https://github.com/priakhatik/wheat-fhb-forecasting/pull/1)** *(open)* — moves preprocessing inside cross-validation folds and removes machine-specific paths so model evaluation is less leakage-prone and more reproducible.
-- **[Corn Belt Drought Risk PR #1](https://github.com/priakhatik/corn-belt-drought-risk/pull/1)** *(open)* — aligns drought labels, prevents future-date joins, and builds climatology from training years only for cleaner held-out evaluation.
-- **[Spotify Azure Project PR #2](https://github.com/priakhatik/spotify_azure_project/pull/2)** *(open)* — repairs a Lakeflow SCD Type 2 CDC definition using the current `pyspark.pipelines` API and the ADF `updated_at` watermark.
+- **[Wheat FHB Forecasting PR #1](https://github.com/priakhatik/wheat-fhb-forecasting/pull/1)** *(merged Oct 16, 2026)* — moves preprocessing inside cross-validation folds and removes machine-specific paths so model evaluation is less leakage-prone and more reproducible.
+- **[Corn Belt Drought Risk PR #1](https://github.com/priakhatik/corn-belt-drought-risk/pull/1)** *(merged Oct 16, 2026)* — aligns drought labels, prevents future-date joins, and builds climatology from training years only for cleaner held-out evaluation.
+- **[Spotify Azure Project PR #2](https://github.com/priakhatik/spotify_azure_project/pull/2)** *(merged Oct 16, 2026)* — repairs a Lakeflow SCD Type 2 CDC definition using the current `pyspark.pipelines` API and the ADF `updated_at` watermark.
 
-These are contributions to repositories owned by **Priya Khatik**; they are listed here as reviewable pull requests, not as projects I own.
+An additional [Corn Belt Drought Risk reproducibility PR #2](https://github.com/priakhatik/corn-belt-drought-risk/pull/2) remains **open as a draft** and is not a merged contribution. These are contributions to repositories owned by **Priya Khatik**, not projects I own.
 
 ---
 
