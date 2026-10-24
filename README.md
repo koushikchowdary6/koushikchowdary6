@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>AI Engineering · Data Engineering · LLM/RAG/Agent Evaluation · AI Security</b><br>
-  M.S. Cybersecurity, University of South Florida · Python · SQL/PostgreSQL · Airflow · Terraform · FastAPI · AWS/Azure/GCP
+  M.S. Information Technology (Cybersecurity & AI focus), University of South Florida · Python · SQL/PostgreSQL · Airflow · Terraform · FastAPI · AWS/Azure/GCP
 </p>
 
 <p align="center">
