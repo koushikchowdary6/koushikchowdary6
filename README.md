@@ -20,8 +20,8 @@ I build AI and data systems that can be inspected, tested, and reproduced. My cu
 
 | Project | What to inspect |
 |---|---|
-| **[EvalForge](https://github.com/koushikchowdary6/EvalForge)** | Reproducible RAG/agent evaluation with retrieval metrics, benchmark fingerprints, and offline tests. [rule-grader integrity (#90)](https://github.com/koushikchowdary6/EvalForge/pull/90), [fail-closed LLM judge JSON (#89)](https://github.com/koushikchowdary6/EvalForge/pull/89), [numeric-answer grading (#88)](https://github.com/koushikchowdary6/EvalForge/pull/88), and [dataset snapshot checks (#84)](https://github.com/koushikchowdary6/EvalForge/pull/84). Separates provider failures from model quality. |
-| **[Prompt Injection Detector](https://github.com/koushikchowdary6/prompt-injection-detector)** | Hybrid heuristic + TF-IDF/Logistic Regression guardrail, adversarial text normalization, and [feature-consistent training and leakage-aware grouped CV](https://github.com/koushikchowdary6/prompt-injection-detector/pull/22) and [pooled false-alarm/F1/confusion metrics](https://github.com/koushikchowdary6/prompt-injection-detector/pull/26). Not injection immunity or production validation. |
+| **[EvalForge](https://github.com/koushikchowdary6/EvalForge)** | Reproducible RAG/agent evaluation with retrieval metrics, benchmark fingerprints, and offline tests. [text-answer boundary grading (#91)](https://github.com/koushikchowdary6/EvalForge/pull/91), [rule-grader integrity (#90)](https://github.com/koushikchowdary6/EvalForge/pull/90), and [fail-closed LLM judge JSON (#89)](https://github.com/koushikchowdary6/EvalForge/pull/89). Separates provider failures from model quality. |
+| **[Prompt Injection Detector](https://github.com/koushikchowdary6/prompt-injection-detector)** | Hybrid heuristic + TF-IDF/Logistic Regression guardrail, adversarial text normalization, and [feature-consistent training and leakage-aware grouped CV](https://github.com/koushikchowdary6/prompt-injection-detector/pull/22) [pooled false-alarm/F1/confusion metrics](https://github.com/koushikchowdary6/prompt-injection-detector/pull/26), and [threshold/FNR operating-point evaluation (#27)](https://github.com/koushikchowdary6/prompt-injection-detector/pull/27). Illustrative CV only, not production validation. |
 | **[SigmaForge](https://github.com/koushikchowdary6/sigmaforge)** | FastAPI/React detection-engineering platform with RBAC, bounded Sigma structural preflight, and Docker CI. [Invisible-only aggregation rejection (#26)](https://github.com/koushikchowdary6/sigmaforge/pull/26) and [identifier validation (#25)](https://github.com/koushikchowdary6/sigmaforge/pull/25); full pySigma validation and rule persistence remain planned. |
 | **[Airflow/PostgreSQL ETL](https://github.com/koushikchowdary6/airflow-postgres-etl)** | Incremental ETL, idempotent upserts, transactional watermarks, nine quality checks, database integration tests, and [upstream schema-drift snapshot protection (#8)](https://github.com/koushikchowdary6/airflow-postgres-etl/pull/8) and [CSV shape validation (#7)](https://github.com/koushikchowdary6/airflow-postgres-etl/pull/7). |
 | **[Terraform GCP Data Pipeline](https://github.com/koushikchowdary6/terraform-gcp-data-pipeline)** | Python/DuckDB ingestion, GCS/BigQuery infrastructure design, integrity-checked incremental state, and [empty-download snapshot preservation](https://github.com/koushikchowdary6/terraform-gcp-data-pipeline/pull/6). No live-cloud deployment claim. |
@@ -33,8 +33,6 @@ I build AI and data systems that can be inspected, tested, and reproduced. My cu
 ### Evidence and limits
 
 All linked engineering PRs are merged and include tests. Benchmarks are reproducible prototypes, not claims of production accuracy or deployment.
-
----
 
 ---
 
