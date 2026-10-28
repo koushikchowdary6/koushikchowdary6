@@ -17,7 +17,7 @@ I build evaluation infrastructure, AI guardrails, security automation, and data 
 
 ## Additional security and cloud/data engineering
 
-- **[Flask AppSec Lab](https://github.com/koushikchowdary6/flask-appsec-lab):** paired vulnerable/hardened web routes with [database-backed, note-scoped, one-time CSRF tokens](https://github.com/koushikchowdary6/flask-appsec-lab/pull/18).
+- **[Flask AppSec Lab](https://github.com/koushikchowdary6/flask-appsec-lab):** paired vulnerable/hardened routes, [note-scoped one-time CSRF tokens](https://github.com/koushikchowdary6/flask-appsec-lab/pull/18), and [legacy database upgrade tests](https://github.com/koushikchowdary6/flask-appsec-lab/pull/19).
 - **[LLM PII Redactor](https://github.com/koushikchowdary6/llm-pii-redactor):** targeted sensitive-data masking, including [numeric JSON credentials](https://github.com/koushikchowdary6/llm-pii-redactor/pull/18) and [YAML multiline/quoted-key credentials](https://github.com/koushikchowdary6/llm-pii-redactor/pull/20).
 - **[IAM Policy Auditor](https://github.com/koushikchowdary6/iam-policy-auditor):** static AWS IAM risk analysis with [strict SourceIp CIDR validation](https://github.com/koushikchowdary6/iam-policy-auditor/pull/27) and [negative/optional condition handling](https://github.com/koushikchowdary6/iam-policy-auditor/pull/28).
 - **[Terraform GCP Data Pipeline](https://github.com/koushikchowdary6/terraform-gcp-data-pipeline):** reproducible infrastructure design and Python/DuckDB ingestion; no live-cloud deployment claim.
