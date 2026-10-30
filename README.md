@@ -15,6 +15,15 @@ I build evaluation infrastructure, AI guardrails, security automation, and data 
 | **[SigmaForge](https://github.com/koushikchowdary6/sigmaforge)** · detection engineering/backend | FastAPI, RBAC and PostgreSQL-backed rule revisions; [selector-pattern preflight](https://github.com/koushikchowdary6/sigmaforge/pull/38), [stored-snapshot integrity checks](https://github.com/koushikchowdary6/sigmaforge/pull/36), [bounded historical snapshot decoding](https://github.com/koushikchowdary6/sigmaforge/pull/39), [corrupt-history revision protection](https://github.com/koushikchowdary6/sigmaforge/pull/41), and [backend/database/Docker CI](https://github.com/koushikchowdary6/sigmaforge/actions). |
 | **[Airflow/PostgreSQL ETL](https://github.com/koushikchowdary6/airflow-postgres-etl)** · data engineering | Incremental loads, idempotent upserts and transactional watermarks; [bounded streaming CSV downloads with atomic last-good snapshots](https://github.com/koushikchowdary6/airflow-postgres-etl/pull/13), [strict SQL quality evidence](https://github.com/koushikchowdary6/airflow-postgres-etl/pull/12), and [PostgreSQL/DAG CI](https://github.com/koushikchowdary6/airflow-postgres-etl/actions). |
 
+## Runnable engineering demos (currently subprojects)
+
+These are **folders inside existing repositories**, not yet standalone GitHub
+repositories. Each has a reproducible synthetic-data walkthrough and dedicated
+GitHub Actions tests.
+
+- **[EdgeWatch IoT](https://github.com/koushikchowdary6/network-anomaly-detector/tree/main/projects/edgewatch)** — authenticated Python/SQLite telemetry receiver, dashboard, idempotent offline replay, and [opt-in quarantine of permanently rejected events](https://github.com/koushikchowdary6/network-anomaly-detector/pull/8). Software-only simulated device; no physical sensor or deployed fleet claim.
+- **[Document Review Pipeline](https://github.com/koushikchowdary6/llm-pii-redactor/tree/main/projects/document-review)** — local text-redaction bundles with manifests and [manual-review approval gating before sanitized-text export](https://github.com/koushikchowdary6/llm-pii-redactor/pull/26). Pattern-based text review, not OCR, PDF pixel masking, authenticated reviewer identity, or compliance certification.
+
 ## Additional security and cloud/data engineering
 
 - **[Flask AppSec Lab](https://github.com/koushikchowdary6/flask-appsec-lab):** paired vulnerable/hardened routes, [note-scoped one-time CSRF tokens](https://github.com/koushikchowdary6/flask-appsec-lab/pull/18), [cross-origin browser POST rejection with regression tests](https://github.com/koushikchowdary6/flask-appsec-lab/pull/23), and [secure form-target CSP hardening](https://github.com/koushikchowdary6/flask-appsec-lab/pull/21).
