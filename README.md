@@ -6,23 +6,16 @@
 
 I build evaluation infrastructure, AI guardrails, security automation, and data pipelines. My master's-level work at the University of South Florida focused on cybersecurity, AI, data, and cloud. Below are **specific engineering changes and tests**, not production-performance claims.
 
-## Start here — four projects worth reviewing
+## Start here — projects and working demos
 
 | Project | Engineering evidence |
 |---|---|
 | **[EvalForge](https://github.com/koushikchowdary6/EvalForge)** · LLM/RAG/agent evaluation | [five-minute API-free BM25 retrieval baseline](https://github.com/koushikchowdary6/EvalForge/pull/138) with deterministic metrics and tests; [paired RAG comparisons with bootstrap intervals](https://github.com/koushikchowdary6/EvalForge/pull/128), [macro/micro tool-call F1 and coverage tests](https://github.com/koushikchowdary6/EvalForge/pull/135), [bounded agent prompts, mock evidence and tool arguments](https://github.com/koushikchowdary6/EvalForge/pull/137), and [Python 3.10–3.12 CI](https://github.com/koushikchowdary6/EvalForge/actions). |
+| **[EdgeWatch IoT](https://github.com/koushikchowdary6/edgewatch-iot)** · telemetry/backend | Standalone Python/SQLite receiver and browser dashboard; idempotent replay and opt-in quarantine. [Setup and failure demo](https://github.com/koushikchowdary6/edgewatch-iot#run-python-310-standard-library-only) · [verified migration CI](https://github.com/koushikchowdary6/edgewatch-iot/actions/runs/41059691758). Software-only synthetic device. |
+| **[Document Review Pipeline](https://github.com/koushikchowdary6/document-review-pipeline)** · privacy/ingestion | Standalone text-redaction bundles, manual approve/reject decisions, and digest-checked sanitized export. Includes upstream redactor regression tests: [264 tests verified in migration CI](https://github.com/koushikchowdary6/document-review-pipeline/actions/runs/41059767849). Text processing; no OCR or compliance claim. |
 | **[Prompt Injection Detector](https://github.com/koushikchowdary6/prompt-injection-detector)** · applied ML/guardrails | Hybrid heuristics + TF-IDF/logistic regression; [leakage-aware grouped CV](https://github.com/koushikchowdary6/prompt-injection-detector/pull/22), [encoded instruction and role-boundary detection](https://github.com/koushikchowdary6/prompt-injection-detector/pull/48), [machine-readable CV reports](https://github.com/koushikchowdary6/prompt-injection-detector/pull/45), and [tests/CI](https://github.com/koushikchowdary6/prompt-injection-detector/actions). |
 | **[SigmaForge](https://github.com/koushikchowdary6/sigmaforge)** · detection engineering/backend | FastAPI, RBAC and PostgreSQL-backed rule revisions; [selector-pattern preflight](https://github.com/koushikchowdary6/sigmaforge/pull/38), [stored-snapshot integrity checks](https://github.com/koushikchowdary6/sigmaforge/pull/36), [bounded historical snapshot decoding](https://github.com/koushikchowdary6/sigmaforge/pull/39), [corrupt-history revision protection](https://github.com/koushikchowdary6/sigmaforge/pull/41), and [backend/database/Docker CI](https://github.com/koushikchowdary6/sigmaforge/actions). |
 | **[Airflow/PostgreSQL ETL](https://github.com/koushikchowdary6/airflow-postgres-etl)** · data engineering | Incremental loads, idempotent upserts and transactional watermarks; [bounded streaming CSV downloads with atomic last-good snapshots](https://github.com/koushikchowdary6/airflow-postgres-etl/pull/13), [strict SQL quality evidence](https://github.com/koushikchowdary6/airflow-postgres-etl/pull/12), and [PostgreSQL/DAG CI](https://github.com/koushikchowdary6/airflow-postgres-etl/actions). |
-
-## Runnable engineering demos (currently subprojects)
-
-These are **folders inside existing repositories**, not yet standalone GitHub
-repositories. Each has a reproducible synthetic-data walkthrough and dedicated
-GitHub Actions tests.
-
-- **[EdgeWatch IoT](https://github.com/koushikchowdary6/network-anomaly-detector/tree/main/projects/edgewatch)** — authenticated Python/SQLite telemetry receiver, dashboard, idempotent offline replay, and [opt-in quarantine of permanently rejected events](https://github.com/koushikchowdary6/network-anomaly-detector/pull/8). Software-only simulated device; no physical sensor or deployed fleet claim.
-- **[Document Review Pipeline](https://github.com/koushikchowdary6/llm-pii-redactor/tree/main/projects/document-review)** — local text-redaction bundles with manifests and [manual-review approval gating before sanitized-text export](https://github.com/koushikchowdary6/llm-pii-redactor/pull/26). Pattern-based text review, not OCR, PDF pixel masking, authenticated reviewer identity, or compliance certification.
 
 ## Additional security and cloud/data engineering
 
